@@ -1,5 +1,5 @@
 
-# プッシュ/ポップ
+# スタック
 
 スタックにデータを積む関数pushとデータを取り出す関数popを作る。
 
@@ -8,6 +8,11 @@
 スタックは1次元配列を用いて実現できる。
 
 ![image](https://user-images.githubusercontent.com/82156802/192754414-aa99557f-c6dd-478b-b243-687f037ec42f.png)
+
+![image](https://user-images.githubusercontent.com/82156802/192759265-c69f18d9-a9b0-4f2d-a2f7-38537662b457.png)
+
+![image](https://user-images.githubusercontent.com/82156802/192759298-36a371a5-1d62-41e4-b658-fc174e7baab5.png)
+
 
 ```c
 #include <stdio.h>
