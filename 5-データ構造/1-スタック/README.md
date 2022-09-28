@@ -8,3 +8,50 @@
 スタックは1次元配列を用いて実現できる。
 
 ![image](https://user-images.githubusercontent.com/82156802/192754414-aa99557f-c6dd-478b-b243-687f037ec42f.png)
+
+```c
+#include <stdio.h>
+
+#define MaxSize 100
+int stack[MaxSize];
+int sp= 0;
+int push(int);
+int pop(int *);
+
+int main(void){
+	int c,n;
+	while(printf("]"),(c=getchar())!=EOF){
+		rewind(stdin);
+		if(c=='i' || c=='I'){
+			printf("data---> ");
+			scanf("%d",&n); rewind(stdin);
+			if(push(n)==-1){
+				printf("スタックがいっぱいです");
+			}
+		}
+		if(c=='o' || c=='O'){
+			if(pop(&n)==-1){
+				printf("スタックがいっぱいです");
+			}
+			else{
+				printf("stack data ---> %d",n);
+			}
+		}
+	}
+}
+int push(int n){
+	if(sp<MaxSize){
+		stack[sp++]=n;
+		return 0;
+	}else{
+		return -1;
+	}
+}
+int pop(int *n){
+	if(sp>0){
+		*n = stack[--sp];
+	}else{
+		return -1;
+	}
+}
+```
