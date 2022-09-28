@@ -9,6 +9,11 @@
 
 キューにデータを入れることをenqueue、データを取り出すことをdequeueと呼ぶ。
 
+## リングバッファ
+
+![image](https://user-images.githubusercontent.com/82156802/192760194-0292f1cb-5acc-44a9-8876-3e327c6333cd.png)
+
+
 ![image](https://user-images.githubusercontent.com/82156802/192760033-57e3825f-913f-4ad1-b383-4e5ad2b5c5f3.png)
 
 ![image](https://user-images.githubusercontent.com/82156802/192760051-c5586dc3-5814-447a-95c8-54a0793063e8.png)
