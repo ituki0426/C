@@ -4,7 +4,8 @@
 
 こうした場合はFIFO(先入れ先出し)方式のデータ構造が必要となる。このモデルが待ち行列(キュー)である。
 
-![image](https://user-images.githubusercontent.com/82156802/192759080-abe3de85-59c2-4cea-9b01-209f38948acf.png)
+![image](https://user-images.githubusercontent.com82156802/192759080-abe3de85-59c2-4cea-9b01-209f38948acf.png)
 
+キューにデータを入れることをenqueue、データを取り出すことをdequeueと呼ぶ。
 ```c
 ```
